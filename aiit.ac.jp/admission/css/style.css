@@ -1,0 +1,375 @@
+@charset "utf-8";
+
+
+/* !GUIDE 共通class
+---------------------------------------------------------- */
+.dlGuide01 {
+}
+	.dlGuide01 dt {
+		float:left;
+		width: 1.5em;
+		margin-right: -1.5em;
+		font-weight: bold;
+	}
+	.dlGuide01 dd {
+		padding-left: 1.5em;
+	}
+
+.dlGuide02 {
+}
+	.dlGuide02 dt {
+		float:left;
+		width: 3em;
+		margin-right: -3em;
+		font-weight: bold;
+	}
+	.dlGuide02 dd {
+		padding-left: 3em;
+	}
+
+
+/* meeting
+---------------------------------------------------------- */
+.tableMeeting01 {
+	width: 545px;
+	line-height: 1.5;
+}
+.tableMeeting01 table {
+	width: 545px;
+}
+	.tableMeeting01 th.th11 {
+		width: 28%;
+	}
+	.tableMeeting01 th.th12 {
+		width: 41%;
+	}
+	.tableMeeting01 th.th13 {
+		width: 31%;
+	}
+
+.meetingImglist01 {
+	margin: 18px 0 26px;
+}
+	.meetingImglist01 li {
+		display: inline;
+		float: left;
+		margin-right: 20px;
+		text-align: center;
+	}
+	.meetingImglist01 li .caption {
+		margin-top: 3px;
+		font-size: 92%;
+	}
+
+/* program
+---------------------------------------------------------- */
+.tableProgram01 {
+	width: 650px;
+	margin: 15px 0 26px;
+	font-size: 92%;
+	line-height: 1.5;
+}
+.tableProgram01 table {
+	width: 650px;
+}
+	.tableProgram01 td {
+		text-align:center;
+	}
+	.tableProgram01 td a {
+		font-size: 92%;
+	}
+.pProgram01 a {
+	display: block;
+	width: 100px;
+	margin: 0 auto;
+}
+
+
+/* student
+---------------------------------------------------------- */
+.tableStudent01 {
+	width: 532px;
+	line-height: 1.5;
+}
+.tableStudent01 table {
+	width: 532px;
+}
+	.tableStudent01 th.th02 {
+		font-weight: normal;
+		width: 15.5%;
+	}
+	.tableStudent01 td {
+		text-align: right;
+	}
+
+.tableStudent02 {
+	width: 576px;
+	margin: 0 0 28px;
+	line-height: 1.5;
+}
+.tableStudent02 table {
+	width: 576px;
+}
+	.tableStudent02 .tr01 .th01 {
+		width: 10.75%;
+		text-align: right;
+	}
+	.tableStudent02 td {
+		text-align: right;
+	}
+.tableStudent03 {
+	width: 651px;
+	line-height: 1.5;
+}
+.tableStudent03 table {
+	width: 651px;
+}
+	.tableStudent03 .tr01 .th01 {
+		width: 9.7%;
+		text-align: right;
+	}
+	.tableStudent03 td {
+		text-align: right;
+	}
+.tableStudent04 {
+	width: 250px;
+	line-height: 1.5;
+}
+.tableStudent04 table {
+	width: 250px;
+}
+	.tableStudent04 td {
+		text-align: right;
+	}
+
+/* point
+---------------------------------------------------------- */
+.h3point01 {
+	border-left: 1px solid #450000;
+}
+.h3point02 {
+	border-left: 1px solid #243EC3;
+}
+
+
+
+/* ----------------------------------------------------------
+
+adm_index.html
+
+---------------------------------------------------------- */
+.sectionCategory {
+	margin: 0 0 30px 15px;
+	padding: 0 0 7px;
+	background: #ffe8db;
+}
+
+.cateInner {
+	background: #fff;
+	padding: 30px 23px 0;
+	margin: 0 7px;
+}
+
+.sectionCategory h2 {
+	font-size: 120%;
+	font-weight: bold;
+	line-height: 1em;
+	padding: 20px 0 18px 25px;
+	background: -moz-linear-gradient(top,  rgba(255,210,186,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,210,186,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(255,210,186,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(255,210,186,1) 0%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(255,210,186,1) 0%,rgba(255,255,255,0) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(255,210,186,1) 0%,rgba(255,255,255,0) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd2ba', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+}
+
+.sectionCategory span.note {
+	font-size: 80%;
+	font-weight: normal;
+	color: #8a8a8a;
+}
+
+.sectionCategory h3 {
+	font-size: 130%;
+}
+
+.cautionArea {
+	padding: 20px 25px;
+	border: 2px solid #C00;
+	box-sizing: border-box;
+}
+
+.cautionArea p span {
+	display: inline-block;
+	margin: 0 0 5px;
+}
+
+/* adm_index
+---------------------------------------------------------- */
+#adm_index ul {
+	margin: 0 0 10px;
+}
+
+#adm_index ul li {
+	float: left;
+	margin: 0 0 10px;
+}
+
+#adm_index ul li.even {	margin-left: 10px; }
+
+#adm_index ul li.btnTop {
+	margin: 0 0 10px;
+	float: none;
+	text-align: center;
+}
+
+#adm_index ul li a:hover img,
+#adm_index ul li a:active img,
+#adm_index dl dt a:hover img,
+#adm_index dl dt a:active img {
+	filter: alpha(opacity=60);
+	-moz-opacity:0.6;
+	opacity:0.6;
+}
+
+.adm_date {
+	margin: 0 auto 10px;
+}
+
+.adm_date table {
+	width: 100%;
+	text-align: center;
+}
+
+.adm_date .table_basic th.th01 {
+	background-color: #FEEBD7;
+}
+
+.adm_contents {
+	width: 480px;
+	margin: 0 auto 10px auto;
+}
+
+.adm_contents table {
+	width: 480px;
+	text-align: center;
+}
+
+.adm_contents table th.th01 {
+	background-color: #E7F3F2;
+}
+
+.type02 .table_basic th.th01 {
+	background-color: #E7F3F2;
+}
+
+#adm_index .sortArea {
+	margin: 0 0 20px;
+}
+
+#adm_index .sortArea dl {
+	width: 100%;
+	padding: 0 0 10px;
+	display: table;
+}
+
+#adm_index .sortArea dl dt {
+	width: 260px;
+	display: table-cell;
+	vertical-align: top;
+}
+
+#adm_index .sortArea dl dt img {
+	width: 100%;
+	height: auto;
+}
+
+#adm_index .sortArea dl dd {
+	padding: 0 0 0 10px;
+	display: table-cell;
+	vertical-align: top;
+}
+
+#adm_index .sortArea dl dd ul,
+#adm_index .sortArea dl dd ul li {
+	width: 371px;
+	margin: 0;
+}
+
+
+
+
+
+/* entrance_ceremony
+---------------------------------------------------------- */
+.ceremonyimg ul li {
+	width: 200px;
+	height: 130px;
+	margin: 10px;
+	float: left;
+	overflow: hidden;
+}
+
+.ceremonyimg ul li img {
+	width: 200px;
+	height: auto;
+}
+
+.aisatsu_name {
+	text-align: right;
+	padding-bottom: 30px;
+}
+
+.aisatsu_list li {
+	padding: 5px 5px 5px 5px;
+	margin-left: 5px;
+}
+
+
+.endTest {
+	background: #E5E5E5;
+}
+
+.sectionCategory .endTest .endNote {
+	color: #F21000;
+}
+
+/* entrance_ceremony lightbox
+---------------------------------------------------------- */
+#lightbox-secNav-btnClose {
+	 visibility: hidden!important;
+}
+#lightbox-loading {
+	 visibility: hidden!important;
+}
+
+/* !Clearfix
+---------------------------------------------------------- */
+.cateInner,
+#adm_index ul,
+.ceremonyimg ul
+{
+	display: block;
+	min-height: 1%;
+}
+.cateInner:after,
+#adm_index ul:after,
+.ceremonyimg ul:after
+{
+	clear: both;
+	content:".";
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+* html .cateInner,
+* html #adm_index ul,
+* html .ceremonyimg ul
+{
+	height: 1%;
+	/*\*//*/
+	height: auto;
+	overflow: hidden;
+	/**/
+}

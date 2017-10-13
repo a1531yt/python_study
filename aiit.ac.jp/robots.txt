@@ -1,0 +1,2 @@
+﻿User-agent: *
+Sitemap: http://aiit.ac.jp/sitemap.xml
