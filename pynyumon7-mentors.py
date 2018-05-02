@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 #
-#
 import requests
 from bs4 import BeautifulSoup
 
@@ -21,15 +20,13 @@ def main():
     # BeautifulSoup に content を渡して解析の準備をする
     soup = BeautifulSoup(content, 'html.parser')
 
-    ## <div class="participation_table_area mb_20">  に該当するものを取り出す
-    # 探す範囲を狭くしたいので、TABLE キメ討ちで取り出すことにする↓
-    # <table class="common_table participants_table padding_10">  に該当するものを取り出す
+    # <div class="participation_table_area mb_20">  に該当するものを取り出す
     # participation_tables は List
-    #participation_tables = soup.find_all('div', class_='participation_table_area mb_20')
-    participation_tables = soup.find_all('table', class_='common_table participants_table padding_10')
+    #participation_tables = soup.find_all('table', class_='common_table participants_table padding_10')
+    participation_tables = soup.find_all('div', class_='participation_table_area mb_20')
 
     # participation_tables を順番に見て、"講師・メンター枠"の情報を取り出す
-    # "講師・メンター枠" TABLEは現状 1個だけなので、for文で回さなくてもイケそうですが 一応念のため
+    mentors_table = []
     for participation_table in participation_tables:
         # <thead><tr><th> に該当するタグの要素を取り出す (参加者枠の種類が記載されているので)
         #participant_type = participation_table.table.thead.tr.th.get_text()
@@ -59,7 +56,5 @@ def main():
     print(mentor_count.get_text())
 
 
-
 if __name__ == '__main__':
     main()
-
